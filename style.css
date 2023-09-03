@@ -1,0 +1,133 @@
+:root{
+    --shadow: 0 2px 2px rgba(0,0,0, 0.5);
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 4000px;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg-flower2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p{
+    text-shadow: var(--shadow);
+}
+
+.hero h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+}
+
+.hero h4{
+    font-size: 1.5rem;
+}
+
+.hero p{
+    font-size: 1.5rem;
+}
+
+.hero a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover{
+    color: rgb(0, 0, 0);
+    background-color: pink;
+}
+
+/* .mynavbar{
+    background-color: rgba(255,255,255, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+} */
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+
+.home{
+    min-height: 100vh;
+    background-image: url(img/bg-flower3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+
+/* Media Query */
+
+/* Laptop */
+@media(max-width:992px){
+    html{
+        font-size: 75%;
+    }
+    .simply-countdown > .simply-section{
+        padding: 50px;
+        margin: 5px;
+    }
+}
+
+/* Tablet */
+@media(max-width:768px){
+    html{
+        font-size: 65%;
+    }
+    .simply-countdown > .simply-section{
+        padding: 40px;
+        margin: 5px;
+    }
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+}
+
+/* Mobile Phone */
+@media(max-width:576px){
+    html{
+        font-size: 60%;
+    }
+    .simply-countdown > .simply-section{
+        padding: 30px;
+        margin: 5px;
+    }
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+}
